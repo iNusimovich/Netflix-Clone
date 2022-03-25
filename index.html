@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IN - Netflix</title>
+    <script src="https://kit.fontawesome.com/dd8d598f2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Shows de TV</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Últimos</a></li>
+            <li><a href="#">Mi lista</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./images/bg.jpg" class="bg">
+        <div class="content">
+            <img src="./images/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Drama</span>
+            </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil velit id error, quo quibusdam vitae quaerat explicabo ab similique consequuntur quidem optio. Maxime eveniet minus fugiat quisquam corporis nostrum voluptas? quidem optio. Maxime eveniet minus fugiat quisquam corporis nostrum voluptas.</p>
+            <div class="buttons">
+                <a href="#"><i class="fas fa-play"></i>Play</a>
+                <a href="#"><i class="fas fa-plus"></i>Mi Lista</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="./images/play.png" class="">Mirar Trailer</a>
+    </div>
+
+    <div class="trailer">
+        <video src="./images/trailer.mp4" controls="true"></video>
+        <img src="./images/close.png" class="close" onclick="toggleVideo();">
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
